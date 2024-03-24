@@ -1,0 +1,97 @@
+* {
+  color: white;
+  -webkit-app-region: no-drag;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.25s;
+}
+
+#backgroundImage {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+body {
+  background-image: url("assets/background.png");
+  overflow: hidden;
+  display: flex;
+  background-color: #232428;
+  -webkit-app-region: drag;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav {
+  display: flex;
+  transform: translate(160%, 60%);
+}
+
+#launcherNav {
+  margin-right: 11px;
+}
+
+.navBtn {
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  transition: all 0.5s;
+}
+
+.navBtn:hover {
+  transform: scale(1.1);
+}
+
+#closeButton {
+  transform: translate(-6px, 0);
+  transition: all 0.5s;
+}
+
+#closeButton:hover {
+  transform: scale(1.1) translate(-6px, 0);
+}
+
+#loginDiv {
+  display: flex;
+  position: absolute;
+  flex-flow: column nowrap;
+  background-color: rgba(35, 36, 40, 0.8);
+  border-radius: 30px;
+  padding: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loginInput {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.35);
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#logoImage {
+  transform: translate(0, -75%);
+}
+
+#playButton {
+  font-size: 25px;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #000000;
+  background-color: #c397d1;
+  transition: all 0.5s;
+}
+
+#playButton:hover {
+  transform: scale(1.05);
+}
+
+#playButton:disabled {
+  background-color: #2e2e2e;
+}
